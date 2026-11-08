@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md Ruhul Amin — IT professional, software developer and AI learner.">
+  <title>Md Ruhul Amin | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Md Ruhul Amin home">Md Ruhul Amin<span class="brand-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About Me</a>
+      <a href="#projects">Project Details</a>
+      <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-section" id="about">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="assets/profile.svg" alt="Illustrated professional profile portrait of Md Ruhul Amin">
+      </div>
+      <div class="profile-copy">
+        <p class="eyebrow">IT PROFESSIONAL · SOFTWARE DEVELOPER · AI LEARNER</p>
+        <h1>Hi, I'm <span class="accent">Md Ruhul Amin</span></h1>
+        <p class="intro">I am a Computer Science and Engineering graduate with more than 10 years of experience supporting enterprise IT systems and developing business-focused software solutions. At SGS, I worked with StarLIMS v12, Crystal Reports, MIS reporting and laboratory applications, collaborating with global teams to keep critical workflows reliable.</p>
+        <p class="intro">I enjoy solving practical problems, learning emerging technologies and building useful digital experiences. I am currently strengthening my skills in web development, Python and generative AI through hands-on projects and IBM learning programs.</p>
+        <div class="profile-tags"><span>Enterprise IT</span><span>Software Support</span><span>Generative AI</span></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="skills">
+      <div class="section-heading"><p class="eyebrow">WHAT I WORK WITH</p><h2>Skills &amp; Technologies</h2><p>Five practical skills spanning software, reporting and modern development.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-logo logo-html">5</div><h3>HTML5</h3><p>Semantic page structure, accessible content and responsive web layouts.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-logo logo-css">3</div><h3>CSS3</h3><p>Responsive styling, flexible layouts, visual hierarchy and interaction states.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-logo logo-js">JS</div><h3>JavaScript</h3><p>DOM interaction, form validation and dynamic page functionality.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-logo logo-python">Py</div><h3>Python</h3><p>Programming fundamentals, automation concepts and problem solving.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-logo logo-report">CR</div><h3>Crystal Reports</h3><p>Business reporting, MIS templates and laboratory report configuration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section projects-section" id="projects">
+      <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h2>Project Details</h2><p>Examples of practical systems and learning projects.</p></div>
+      <div class="projects-grid">
+        <article class="project-card"><span class="project-number">01</span><h3>Laboratory Reporting &amp; MIS</h3><p>Configured StarLIMS v12 report templates and Crystal Reports based on business requirements, helping laboratory teams produce consistent and useful reports.</p><div class="project-meta">StarLIMS · Crystal Reports · MIS</div></article>
+        <article class="project-card"><span class="project-number">02</span><h3>Responsive Personal Portfolio</h3><p>Designed and developed a single-page portfolio with responsive sections, skill cards, project summaries and an interactive recommendation form.</p><div class="project-meta">HTML5 · CSS3 · JavaScript</div></article>
+        <article class="project-card"><span class="project-number">03</span><h3>IT Support &amp; Access Workflow</h3><p>Supported enterprise application users, investigated access and reporting issues, and coordinated Active Directory and file-server access requests.</p><div class="project-meta">IT Operations · Active Directory · Support</div></article>
+      </div>
+    </section>
+
+    <section class="content-section recommendations-section" id="recommendations">
+      <div class="section-heading"><p class="eyebrow">KIND WORDS</p><h2>Recommendations</h2><p>Professional-style sample recommendations for this portfolio exercise.</p></div>
+      <div class="recommendations-grid" id="recommendationList" aria-live="polite">
+        <blockquote class="recommendation-card"><span class="quote-mark">“</span><p>Ruhul brings a thoughtful and structured approach to technical problem-solving. He takes time to understand user needs and turns them into practical solutions.</p><cite>— Project colleague</cite></blockquote>
+        <blockquote class="recommendation-card"><span class="quote-mark">“</span><p>His experience with laboratory applications and reporting makes him a dependable partner for teams that rely on accurate information and stable systems.</p><cite>— Business stakeholder</cite></blockquote>
+        <blockquote class="recommendation-card"><span class="quote-mark">“</span><p>Ruhul is committed to continuous learning and shares his knowledge generously. His mix of enterprise IT experience and curiosity about new technology is valuable.</p><cite>— Learning peer</cite></blockquote>
+      </div>
+      <div class="recommendation-form-wrap">
+        <div><p class="eyebrow">ADD A NOTE</p><h3>Leave a recommendation</h3><p class="form-hint">Submit a short message to add it to the page.</p></div>
+        <form id="recommendationForm">
+          <label for="recommendationText">Your recommendation</label>
+          <textarea id="recommendationText" name="recommendation" rows="4" placeholder="Write a thoughtful recommendation..." required minlength="8"></textarea>
+          <button class="submit-button" type="submit">Submit recommendation <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Md Ruhul Amin · Built with HTML, CSS &amp; JavaScript</p></footer>
+  <a class="home-button" href="#home" aria-label="Back to home" title="Back to top"><span aria-hidden="true">⌂</span></a>
+  <div class="popup" id="successPopup" role="status" aria-live="polite" aria-hidden="true"><div class="popup-icon">✓</div><p>Thank you! Your recommendation has been added.</p><button type="button" id="closePopup" aria-label="Close message">×</button></div>
+  <script src="script.js"></script>
+</body>
+</html>
